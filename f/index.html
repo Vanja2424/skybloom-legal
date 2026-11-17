@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Be my friend in Skybloom</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  .code { font-size: 2.2em; font-weight: 700; letter-spacing: .06em; color: #2e6b3a; text-align: center; margin: .4em 0 .2em; }
+  .store { display: block; text-align: center; margin: 1.2em auto; padding: .9em 1.4em; max-width: 320px; border-radius: 14px;
+           background: #4caf50; color: #fff; font-weight: 700; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+<header><a href="../index.html">Skybloom</a></header>
+
+<h1>A friend invited you to Skybloom!</h1>
+<p>Their friend code:</p>
+<div class="code" id="code">—</div>
+
+<a class="store" href="https://play.google.com/store/apps/details?id=com.viastudio.skybloom">Get Skybloom on Google Play</a>
+
+<div class="card">
+<strong>Already have Skybloom?</strong> Open it, tap <em>Friends</em> in the village, then <em>Add</em>, and type the code above.
+On most phones, tapping the invite link again opens the game straight there.
+</div>
+
+<footer>© 2026 Via Studio · <a href="../privacy.html">Privacy Policy</a> · <a href="../terms.html">Terms of Service</a></footer>
+</main>
+<script>
+  // The code from ?c=SB-XXXX-XXXX, shown as typed letters only (anything else is dropped).
+  var c = (new URLSearchParams(location.search).get('c') || '').toUpperCase().replace(/[^A-Z0-9-]/g, '').slice(0, 14);
+  if (c) document.getElementById('code').textContent = c;
+</script>
+</body>
+</html>
