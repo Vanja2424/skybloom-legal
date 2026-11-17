@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.viastudio.skybloom",
+      "sha256_cert_fingerprints": [
+        "BD:A0:C6:BB:18:C1:18:2A:B1:5C:8E:DA:9E:5D:89:93:DC:43:52:63:AE:36:50:04:95:38:03:06:38:89:AB:00",
+        "FC:24:14:53:FA:53:EE:5C:CA:12:6A:88:4F:A6:DB:1A:FE:83:B5:08:5B:FA:26:6F:8E:00:15:63:6B:38:C0:AC",
+        "9D:73:90:78:32:99:9C:B4:7A:79:9F:1E:A3:46:78:AA:ED:AC:B3:95:0E:96:7A:DA:FD:A3:C4:B0:70:80:51:26"
+      ]
+    }
+  }
+]
